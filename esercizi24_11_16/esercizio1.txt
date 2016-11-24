@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    const int PLAYERS=10;
+    int scores[PLAYERS];
+    int average=0;
+    int sum=0;
+    for (int i=0; i<10; ++i)
+        {
+        cout<<"Insert score for Player "<< i <<".\n";
+        cin>>scores[i];
+        sum +=scores[i];
+        }
+    for (int i=9; i>=0; --i)
+        {
+        cout<<"Player "<< i <<" score is "<< scores[i] <<".\n";
+        }
+        average = sum / PLAYERS;
+
+    cout<<"Average score for all players is "<< average <<".\n";
+
+
+}
